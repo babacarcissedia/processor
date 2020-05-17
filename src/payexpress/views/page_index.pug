@@ -1,0 +1,23 @@
+extends layout.pug
+block content
+
+  .ui.main.text.container.grey
+    <h1 class="ui header">Payexpress integration boilerplate</h1>
+    <p>This is a basic fixed menu template using fixed size containers.</p>
+    <form class="ui form" action="/payexpress/ask" method="post">
+      <div class="ui stacked">
+        <div class="field">
+            <input type="text" name="item_name" placeholder="Item name" value="Some random shit">
+        </div>
+        <div class="field">
+            <input type="text" name="item_price" placeholder="Item price" value="400">
+        </div>
+        <div class="field">
+            <input type="text" name="ref_command" placeholder="Command ref" value="I don't know">
+        </div>
+        <div class="field">
+            <input type="text" name="command_name" placeholder="Command name" value="This is america">
+        </div>
+        <button type="submit" class="ui fluid large teal submit button">Ask payment</div>
+      </div>
+    </form>

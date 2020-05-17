@@ -1,0 +1,62 @@
+{
+  "name": "@bcdbuddy/processor",
+  "license": "MIT",
+  "version": "0.1.0",
+  "main": "index.js",
+  "_moduleAliases": {
+    "@": "dist/"
+  },
+  "keywords": [
+    "coinbase",
+    "bitcoin",
+    "api",
+    "nodejs",
+    "typescript"
+  ],
+  "repository": "git@github.com:bcdbuddy/processor.git",
+  "author": "Babacar Cissé DIA <bcdbuddy@outlook.com>",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "btoa": "^1.2.1",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "module-alias": "^2.2.2"
+  },
+  "scripts": {
+    "prebuild": "rm -fr ./dist",
+    "build": "tsc",
+    "postbuild": "yarn test:coverage",
+    "test": "jest",
+    "test:coverage": "yarn test --coverage"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/faker": "^4.1.11",
+    "@types/jest": "^25.2.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "jest": "^25.0.1",
+    "jest-mock-extended": "^1.0.8",
+    "nodemon": "^2.0.2",
+    "pug": "^2.0.4",
+    "ts-jest": "^25.5.0",
+    "typescript": "^3.8.3"
+  },
+  "engines": {
+    "yarn": "1.x",
+    "node": "12.x",
+    "npm": "6.x"
+  },
+  "jest": {
+    "coverageReporters": [
+      "json-summary",
+      "text",
+      "lcov"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/bcdbuddy/processor/issues"
+  },
+  "homepage": "https://github.com/bcdbuddy/processor#readme"
+}
