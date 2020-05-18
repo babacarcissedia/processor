@@ -1,4 +1,4 @@
-import { IPayExpressOptions } from "@/payexpress/defintions";
+import { IPayExpressOptions } from "@/payexpress/definitions";
 import axios from 'axios'
 import crypto from 'crypto'
 

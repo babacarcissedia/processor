@@ -11,6 +11,10 @@ module.exports = {
     '<rootDir>/src/**/*.ts',
     '!**/node_modules/**',
   ],
+  // A map from regular expressions to module names that allow to stub out resources with a single module
+  moduleNameMapper: {
+    "@/(.*)": "<rootDir>/src/$1",
+  },
   coverageDirectory: './coverage',
   bail: 1,
   coverageReporters: ['json', 'html', 'text'],

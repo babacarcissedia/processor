@@ -1,4 +1,4 @@
-name: Coinbase.com SDK CI
+name: Payment Processors CI
 on:
   pull_request:
     branches: [master]

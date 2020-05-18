@@ -1,0 +1,1 @@
+{"version":3,"file":"config.js","sourceRoot":"","sources":["../../src/coinbase/config.ts"],"names":[],"mappings":";;;;;;AAAA,kDAA2B;AAC3B,gBAAM,CAAC,MAAM,EAAE,CAAA;AAEF,QAAA,gBAAgB,GAAG,MAAM,CAAC,OAAO,CAAC,GAAG,CAAC,gBAAgB,IAAI,EAAE,CAAC,CAAA;AAC7D,QAAA,oBAAoB,GAAG,MAAM,CAAC,OAAO,CAAC,GAAG,CAAC,oBAAoB,IAAI,EAAE,CAAC,CAAA"}
