@@ -1,32 +1,21 @@
 {
   "name": "@bcdbuddy/processor",
+  "author": "Babacar Cissé DIA <bcdbuddy@outlook.com>",
   "license": "MIT",
   "version": "0.1.0",
-  "main": "dist/index.js",
-  "_moduleAliases": {
-    "@": "dist/"
-  },
-  "keywords": [
-    "coinbase",
-    "bitcoin",
-    "api",
-    "nodejs",
-    "typescript"
-  ],
-  "repository": "git@github.com:bcdbuddy/processor.git",
-  "author": "Babacar Cissé DIA <bcdbuddy@outlook.com>",
-  "dependencies": {
-    "axios": "^0.19.2",
-    "btoa": "^1.2.1",
-    "dotenv": "^8.2.0",
-    "module-alias": "^2.2.2"
-  },
+  "main": "./index.js",
+  "module": "./src/index.ts",
+  "types": "./typings",
   "scripts": {
     "prebuild": "rm -fr ./dist",
     "build": "tsc",
-    "postbuild": "yarn test:coverage",
     "test": "jest",
     "test:coverage": "yarn test --coverage"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "btoa": "^1.2.1",
+    "module-alias": "^2.2.2"
   },
   "devDependencies": {
     "@types/dotenv": "^8.2.0",
@@ -41,6 +30,17 @@
     "pug": "^2.0.4",
     "ts-jest": "^25.5.0",
     "typescript": "^3.8.3"
+  },
+  "keywords": [
+    "coinbase",
+    "paypal",
+    "bitcoin",
+    "api",
+    "nodejs",
+    "typescript"
+  ],
+  "_moduleAliases": {
+    "@processor/": "dist/"
   },
   "engines": {
     "yarn": "1.x",
@@ -57,5 +57,6 @@
   "bugs": {
     "url": "https://github.com/bcdbuddy/processor/issues"
   },
+  "repository": "git@github.com:bcdbuddy/processor.git",
   "homepage": "https://github.com/bcdbuddy/processor#readme"
 }

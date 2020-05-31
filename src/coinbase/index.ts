@@ -12,7 +12,7 @@ import {
 } from "./definitions";
 import axios from 'axios'
 
-export default class Index {
+export default class Coinbase {
   private readonly apiKey: string;
   private readonly apiVersion: string;
   constructor (options: ICoinbaseServiceOptions) {

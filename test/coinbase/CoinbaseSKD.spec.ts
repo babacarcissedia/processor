@@ -1,5 +1,5 @@
-import CoinbaseSDK from "@/coinbase";
-import { COINBASE_API_KEY, COINBASE_API_VERSION } from "@/coinbase/config";
+import CoinbaseSDK from "@processor/coinbase";
+import { COINBASE_API_KEY, COINBASE_API_VERSION } from "@processor/coinbase/config";
 
 
 describe('CoinbaseSDK', () => {

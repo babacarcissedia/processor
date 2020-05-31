@@ -110,14 +110,14 @@ export interface ICheckoutResponse {
 }
 
 export interface ICreateCheckoutRequest {
-  "name": string, // "The Sovereign Individual",
-  "description": string, // "Mastering the Transition to the Information Age",
-  "local_price": {
-    "amount": string, // "100.00",
-    "currency": string // "USD"
+  name: string, // "The Sovereign Individual",
+  description: string, // "Mastering the Transition to the Information Age",
+  local_price: {
+    amount: string, // "100.00",
+    currency: string // "USD"
   },
-  "pricing_type": IPriceType,
-  "requested_info": string[] // ["email"]
+  pricing_type: IPriceType,
+  requested_info: string[] // ["email"]
 }
 
 export interface IEvent {

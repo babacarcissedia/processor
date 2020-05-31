@@ -1,6 +1,6 @@
-import CoinbaseSDK from "@/coinbase";
-import { COINBASE_API_KEY, COINBASE_API_VERSION } from "@/coinbase/config";
-import { ICheckoutResponse, ICreateCheckoutRequest, IPriceType } from "@/coinbase/definitions";
+import CoinbaseSDK from "@processor/coinbase";
+import { COINBASE_API_KEY, COINBASE_API_VERSION } from "@processor/coinbase/config";
+import { ICheckoutResponse, ICreateCheckoutRequest, IPriceType } from "@processor/coinbase/definitions";
 import { CREATE_CHECKOUT_RESPONSE, LIST_CHARGE_RESPONSE } from "./__data__/fixtures";
 import { expectPaginationObject } from "./index";
 

@@ -36,5 +36,7 @@ Happy hacking.
 
 - paiement_en: https://twitter.com/babacarcissedia/status/1262155283054329857?s=20
 - paiement_fr: https://twitter.com/babacarcissedia/status/1262156200126361600?s=20
+- paiement: integration UPay https://twitter.com/babacarcissedia/status/1264620477022117888?s=20
 - coinbase init: https://twitter.com/babacarcissedia/status/1259658794126192640?s=20
 - delivery with Paps: https://twitter.com/babacarcissedia/status/1258848728217194498?s=20
+- bizao: https://twitter.com/babacarcissedia/status/1266693616254189570?s=20

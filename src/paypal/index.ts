@@ -1,6 +1,6 @@
 import btoa from 'btoa'
 import axios from 'axios'
-import { IPaypalOptions } from "@/paypal/definitions";
+import { IPaypalOptions } from "@processor/paypal/definitions";
 
 export default class PayPal {
   private options: IPaypalOptions;

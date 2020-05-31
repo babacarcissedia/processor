@@ -1,4 +1,4 @@
-import { IPayExpressOptions } from "@/payexpress/definitions";
+import { IPayExpressOptions, IPayExpressPaymentRequest } from "@processor/payexpress/definitions";
 import axios from 'axios'
 import crypto from 'crypto'
 
@@ -16,25 +16,7 @@ export default class PayExpress {
   }
 
 
-  requestPayment (payload: any) {
-    // const data = {
-    //   "item_name": "",
-    //   "item_price": "",
-    //   "ref_command": "",
-    //   "command_name": "",
-    //   // optional
-    //   "currency": "",
-    //   "env": "test|prod",
-    //   "ipn_url": "",
-    //   "success_url": "",
-    //   "cancel_url": "",
-    //   "custom_field": "",
-    // ipn_url: 'https://7cdde587.ngrok.io/ipn ',
-    // success_url: 'https://7cdde587.ngrok.io/callback?type=success',
-    // cancel_url: 'https://7cdde587.ngrok.io/callback?type=error',
-    // env: 'test',
-    // currency: 'XOF',
-    // }
+  requestPayment (payload: IPayExpressPaymentRequest) {
     return new Promise((resolve, reject) => {
       axios({
         method: 'POST',
@@ -53,7 +35,8 @@ export default class PayExpress {
 
   ipn (bodyPayload: any) {
     return new Promise((resolve, reject) => {
-      const {type_event,
+      const {
+        type_event,
         ref_command,
         item_name,
         item_price,
