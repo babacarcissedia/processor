@@ -2,7 +2,7 @@
   "name": "@bcdbuddy/processor",
   "author": "Babacar Cissé DIA <bcdbuddy@outlook.com>",
   "license": "MIT",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "./index.js",
   "module": "./src/index.ts",
   "types": "./typings",

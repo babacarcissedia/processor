@@ -1,21 +1,20 @@
-name: Payment Processors CI
-on:
-  pull_request:
-    branches: [master]
-  push:
-    branches: [master]
+name: CI
+
+on: [pull_request, push]
 
 jobs:
   test_pull_request:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x, 13.x, 14.x]
     env:
       COINBASE_API_KEY: ${{ secrets.COINBASE_API_KEY }}
       COINBASE_API_VERSION: ${{ secrets.COINBASE_API_VERSION }}
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
       - run: yarn install
       - run: yarn build
       - run: yarn test

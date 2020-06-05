@@ -1,4 +1,4 @@
-name: Payment processor Package
+name: Package
 
 on:
   release:
@@ -14,23 +14,19 @@ jobs:
          node-version: 12
      - run: yarn install
      - run: yarn build
-     - run: yarn test
 
   publish-npm:
     needs: build
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [10.x]
     steps:
       - name: Checkout repository
         uses: actions/checkout@master
-      - name: Set up Node.js
+      - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@master
-        with:
-          node-version: 10.0.0
       - name: Publish if version has been updated
         uses: pascalgn/npm-publish-action@51fdb4531e99aac1873764ef7271af448dc42ab4
-        with: # All of theses inputs are optional
-          tag_name: "v%s"
-          tag_message: "v%s"
-          commit_pattern: "^Release (\\S+)"
         env:
-          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }} # You need to set this in your repo settings
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
