@@ -27,7 +27,7 @@
     "jest": "^25.0.1",
     "jest-mock-extended": "^1.0.8",
     "nodemon": "^2.0.2",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "ts-jest": "^25.5.0",
     "typescript": "^3.8.3"
   },
