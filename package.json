@@ -22,7 +22,7 @@
     "@types/faker": "^4.1.11",
     "@types/jest": "^25.2.1",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "faker": "^4.1.0",
     "jest": "^25.0.1",
     "jest-mock-extended": "^1.0.8",
