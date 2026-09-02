@@ -5,3 +5,7 @@ node_modules
 typings
 dist
 coverage
+.env
+*.env
+!*sample.env
+!sample.env
